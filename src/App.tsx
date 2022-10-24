@@ -5,10 +5,16 @@ import slack from "./assets/slack.svg";
 import github from "./assets/github.svg";
 import zuri from "./assets/zuri.svg";
 import i4g from "./assets/i4g.svg";
+import shareBtn from "./assets/share button.svg";
+import dots from "./assets/dots.svg";
 function App() {
   return (
     <div className="App">
       <main>
+        <div className="share_button">
+          <img src={shareBtn} alt="share button" className="hidden md:block" />
+          <img src={dots} alt="tooltip button" className="md:hidden" />
+        </div>
         <div className="profile">
           <div className="profile_img_container">
             <img src={pfp} id="profile_img" alt="profile image" />

@@ -3,8 +3,16 @@ main {
   @apply mx-auto py-12;
   @apply flex flex-col items-center justify-center;
 
+  .share_button {
+    @apply p-2 md:mr-[20%];
+    @apply self-end;
+    @apply rounded-full border-[1.5px] border-dotted border-gray-300;
+    @apply cursor-pointer;
+    @apply hover:bg-gray-200;
+  }
   .profile_img_container {
     @apply flex justify-center;
+
     #profile_img {
       @apply w-[80px];
     }
@@ -30,7 +38,7 @@ main {
 footer {
   @apply w-11/12;
   @apply flex flex-col items-center justify-between space-y-5 md:flex-row md:space-y-0;
-  @apply border-t border-gray-400;
+  @apply border-t border-gray-200;
   @apply mx-auto mt-16 py-8;
 
   img {
