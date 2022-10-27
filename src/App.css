@@ -13,16 +13,24 @@ main {
   .profile {
     @apply mb-6;
     @apply flex flex-col items-center justify-center;
-
     &__img__container {
       @apply h-[80px] w-[80px];
       @apply cursor-pointer;
       @apply mb-3;
       @apply rounded-full;
       @apply focus:outline focus:outline-4 focus:outline-gray-300;
+      @apply relative;
 
+      &:hover:before {
+        content: url("./assets/camera.svg");
+        display: block;
+        @apply h-full w-full rounded-full;
+        @apply bg-gray-600 opacity-70;
+        @apply absolute left-0 top-0;
+        @apply flex items-end justify-center;
+      }
       #profile_img {
-        @apply w-full;
+        @apply h-full w-full;
         @apply rounded-full;
       }
     }
