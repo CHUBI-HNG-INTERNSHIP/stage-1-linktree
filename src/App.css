@@ -11,11 +11,14 @@ main {
     @apply hover:bg-gray-200;
   }
   .profile {
+    @apply mb-6;
+
     &__img__container {
       @apply flex justify-center;
-
+      @apply mb-3;
       #profile_img {
-        @apply w-[80px];
+        @apply h-[80px] w-[80px];
+        @apply rounded-full;
       }
     }
   }

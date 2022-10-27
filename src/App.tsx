@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./App.css";
-import pfp from "./assets/profile__img.png";
+import pfp from "./assets/headshot.jpg";
 import slack from "./assets/slack.svg";
 import github from "./assets/github.svg";
 import zuri from "./assets/zuri.svg";
