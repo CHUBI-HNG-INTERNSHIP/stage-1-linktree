@@ -16,7 +16,7 @@ function App() {
           <img src={dots} alt="tooltip button" className="md:hidden" />
         </div>
         <div className="profile">
-          <div className="profile_img_container">
+          <div className="profile__img__container">
             <img src={pfp} id="profile_img" alt="profile image" />
           </div>
           <h1 className="text-text-xl font-bold text-gray-900" id="twitter">
@@ -34,7 +34,7 @@ function App() {
           <div className="button">Button</div>
           <div className="button">Button</div>
         </div>
-        <div className="social_links">
+        <div className="social__links">
           <div className="slack">
             <img src={slack} alt="slack icon" />
           </div>

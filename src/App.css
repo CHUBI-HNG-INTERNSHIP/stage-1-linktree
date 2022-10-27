@@ -10,11 +10,13 @@ main {
     @apply cursor-pointer;
     @apply hover:bg-gray-200;
   }
-  .profile_img_container {
-    @apply flex justify-center;
+  .profile {
+    &__img__container {
+      @apply flex justify-center;
 
-    #profile_img {
-      @apply w-[80px];
+      #profile_img {
+        @apply w-[80px];
+      }
     }
   }
 
@@ -30,7 +32,7 @@ main {
     @apply hover:bg-gray-300;
   }
 
-  .social_links {
+  .social__links {
     @apply flex;
     @apply space-x-6;
   }
