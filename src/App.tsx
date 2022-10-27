@@ -1,5 +1,6 @@
-import { useState } from "react";
-import "./App.css";
+import { linkData } from "./data/links";
+import Link from "./components/Link";
+
 import pfp from "./assets/headshot.jpg";
 import slack from "./assets/slack.svg";
 import github from "./assets/github.svg";
@@ -7,7 +8,19 @@ import zuri from "./assets/zuri.svg";
 import i4g from "./assets/i4g.svg";
 import shareBtn from "./assets/share button.svg";
 import dots from "./assets/dots.svg";
+import "./App.css";
+
 function App() {
+  const links = linkData.map((linkItem) => {
+    return (
+      <Link
+        key={linkItem.id}
+        text={linkItem.text}
+        linkId={linkItem.linkId}
+        link={linkItem.link}
+      />
+    );
+  });
   return (
     <div className="App">
       <main>
@@ -26,14 +39,7 @@ function App() {
             chubiXaX
           </h1>
         </div>
-        <div className="buttons">
-          <div className="button">Button</div>
-          <div className="button">Button</div>
-          <div className="button">Button</div>
-          <div className="button">Button</div>
-          <div className="button">Button</div>
-          <div className="button">Button</div>
-        </div>
+        <div className="buttons">{links}</div>
         <div className="social__links">
           <div className="slack">
             <img src={slack} alt="slack icon" />

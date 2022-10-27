@@ -40,6 +40,7 @@ main {
     @apply w-full;
   }
   .button {
+    @apply block;
     @apply bg-gray-200;
     @apply text-center font-[500];
     @apply rounded-[8px];
