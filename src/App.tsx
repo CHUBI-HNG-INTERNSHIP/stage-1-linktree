@@ -23,7 +23,7 @@ function App() {
             @chubiyojo__
           </h1>
           <h1 id="slack" className="hidden">
-            Slack
+            chubiXaX
           </h1>
         </div>
         <div className="buttons">
