@@ -17,7 +17,7 @@ function App() {
         </div>
         <div className="profile">
           <div className="profile__img__container">
-            <img src={pfp} id="profile_img" alt="profile image" />
+            <img src={pfp} id="profile__img" alt="profile image" />
           </div>
           <h1 className="text-text-xl font-bold text-gray-900" id="twitter">
             @chubiyojo__
